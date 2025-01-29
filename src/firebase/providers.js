@@ -16,13 +16,20 @@ export const signInWithGoogle = async() => {
 
     try {
 
+        
+        
+
         // signInWithPopup(FirebaseAuth, googleProvider ).then((result) => {
         //     const user = result.user;
         //     console.log(user);
 
         // });
+
+       
         
-        const result = await signInWithPopup(FirebaseAuth, googleProvider );
+        
+        // const result = await signInWithPopup(FirebaseAuth, googleProvider );
+        const result = await signInWithPopup(FirebaseAuth, new GoogleAuthProvider());
 
         // const credentials = GoogleAuthProvider.credentialFromResult(result);
         // console.log({credentials});
@@ -41,16 +48,17 @@ export const signInWithGoogle = async() => {
 
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(error);
+        console.log(error, errorCode);
 
         return {
             ok: false,
 
             errorMessage 
         }
-        
+      
+      }
     }
-}
+
 
 export const registerUserWithEmailPassword = async({ email, password, displayName }) => {
 
