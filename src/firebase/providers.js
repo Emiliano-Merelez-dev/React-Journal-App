@@ -48,7 +48,7 @@ export const signInWithGoogle = async() => {
 
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(error, errorCode);
+        console.log(error, errorCode, errorMessage);
 
         return {
             ok: false,

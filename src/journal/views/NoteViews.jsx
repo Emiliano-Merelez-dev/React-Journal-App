@@ -112,7 +112,7 @@ export const NoteViews = () => {
                 variant="filled"
                 fullWidth
                 multiline
-                placeholder=" Que cagada te mandaste hoy? "
+                placeholder=" Que anotaras hoy? "
                 minRows={ 5 }
                 name="body"
                 value={body}
