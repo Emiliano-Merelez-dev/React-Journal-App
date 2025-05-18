@@ -33,6 +33,8 @@ Aplicación de notas personales con autenticación, subida de imágenes, almacen
 
 1. Clonar el repositorio
 2. Instalar dependencias
-
-```bash
 npm install
+3. Configurar Firebase:
+Crear un archivo .env a partir del .env.template
+Agregar las credenciales de tu proyecto de Firebase
+4. Ejecutar el proyecto con npm start
